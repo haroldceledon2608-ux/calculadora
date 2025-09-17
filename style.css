@@ -1,0 +1,75 @@
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #b3b0b0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(163, 160, 160, 0.829);
+    width: 320px;
+}
+
+.display {
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.previous-operand {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    min-height: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    background-color: #505050;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    font-weight: 300;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.buttons .operator {
+    background-color: #00ffd5;
+}
+
+.buttons .ac, .buttons .delete {
+    background-color: #d4d4d2;
+    color: #000;
+}
+
+.buttons .equals {
+    background-color: #0066ff;
+}
+
+.buttons button:active {
+    filter: brightness(1.2);
+}
+
+.buttons .span-2 {
+    grid-column: span 2;
+    width: auto;
+    border-radius: 32.5px;
+    text-align: left;
+    padding-left: 20px;
+}
