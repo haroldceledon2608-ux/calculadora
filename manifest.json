@@ -1,1 +1,8 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Calculadora Web",
+  "short_name": "Calculadora",
+  "description": "Una calculadora sencilla implementada con HTML, CSS y JavaScript."
 
+}
